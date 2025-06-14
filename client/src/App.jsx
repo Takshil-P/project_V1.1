@@ -59,7 +59,8 @@ function App() {
           <Route path="/table-tennis-scheduler" element={<TableTennisScheduler />} />
           <Route path="/chess-scheduler" element={<ChessScheduler />} />
           <Route path="/cricket-scheduler" element={<CricketScheduler />} />
-          <Route path="/tournament" element={<Tournament />} />
+          <Route path="/tournament" element={<Tournament toggleDarkMode={() => setIsDarkMode(!isDarkMode)} isDarkMode={isDarkMode} />}/>
+          {/* <Route path="/tournament" element={<Tournament />}/> */}
           <Route path="/Sports-Hub" element={<SportsHub />} />
           
         </Routes>
